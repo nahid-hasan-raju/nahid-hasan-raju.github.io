@@ -12,6 +12,22 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
+    <style>
+        .project-links a {
+            text-decoration: none !important;
+        }
+        
+        .project-links a:hover {
+            text-decoration: none !important;
+        }
+        
+        /* Optional: Add hover effect instead of underline */
+        .project-links a:hover {
+            opacity: 0.8;
+            transform: translateY(-1px);
+            transition: all 0.2s ease;
+        }
+    </style>
     <!-- Bootstrap Theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -196,84 +212,204 @@
                 <h2 class="mb-5">Projects</h2>
 
                 <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title text-primary">QuikDel</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">MSCS Thesis Project</h6>
-                                <p class="card-text">
-                                    A scalable hierarchical multi-agent system for urban delivery optimization using Deep Q-Learning. 
-                                    Achieved 25% reduction in travel distances while processing 13,866+ delivery requests per hour.
-                                </p>
-                                <div class="mb-2">
-                                    <span class="badge bg-primary me-1">Reinforcement Learning</span>
-                                    <span class="badge bg-primary me-1">Multi-Agent Systems</span>
-                                    <span class="badge bg-primary me-1">Python</span>
-                                    <span class="badge bg-primary me-1">GIS</span>
-                                </div>
+                <!-- QuikDel Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">QuikDel</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">MSCS Thesis Project</h6>
+                            <p class="card-text">
+                                A scalable hierarchical multi-agent system for urban delivery optimization using Deep Q-Learning. 
+                                Achieved 25% reduction in travel distances while processing 13,866+ delivery requests per hour.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-primary me-1">Reinforcement Learning</span>
+                                <span class="badge bg-primary me-1">Multi-Agent Systems</span>
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">GIS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nahid-hasan-raju/DeliverAI" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title text-primary">Human Activity Recognition</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Machine Learning Course Project</h6>
-                                <p class="card-text">
-                                    Comprehensive comparison of 10 classification models including Logistic Regression, Random Forest, 
-                                    and Neural Networks for activity classification with extensive preprocessing and evaluation.
-                                </p>
-                                <div class="mb-2">
-                                    <span class="badge bg-success me-1">Machine Learning</span>
-                                    <span class="badge bg-success me-1">Classification</span>
-                                    <span class="badge bg-success me-1">Python</span>
-                                    <span class="badge bg-success me-1">Scikit-learn</span>
-                                </div>
+                <!-- Human Activity Recognition Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Human Activity Recognition</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Machine Learning Project</h6>
+                            <p class="card-text">
+                                Comprehensive comparison of 10 classification models including Logistic Regression, Random Forest, 
+                                and Neural Networks for activity classification with extensive preprocessing and evaluation.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-success me-1">Machine Learning</span>
+                                <span class="badge bg-success me-1">Classification</span>
+                                <span class="badge bg-success me-1">Python</span>
+                                <span class="badge bg-success me-1">Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nahid-hasan-raju/Activity-Detection-using-ML-models" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title text-primary">Galaxy Wearable Features</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Samsung R&D Industrial Project</h6>
-                                <p class="card-text">
-                                    Developed multiple production features for Galaxy Watch 6/7 and Fit3 serving 10M+ users. 
-                                    Implemented Sound Settings, Display Settings, and Advanced Features with comprehensive testing.
-                                </p>
-                                <div class="mb-2">
-                                    <span class="badge bg-warning me-1">Android</span>
-                                    <span class="badge bg-warning me-1">Kotlin</span>
-                                    <span class="badge bg-warning me-1">WearOS</span>
-                                    <span class="badge bg-warning me-1">Mobile Development</span>
-                                </div>
+                <!-- Galaxy Wearable Features Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Galaxy Wearable Features</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Samsung R&D Industrial Project</h6>
+                            <p class="card-text">
+                                Developed multiple production features for Galaxy Watch 6/7 and Fit3 serving 10M+ users. 
+                                Implemented Sound Settings, Display Settings, and Advanced Features with comprehensive testing.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-warning me-1">Android</span>
+                                <span class="badge bg-warning me-1">Kotlin</span>
+                                <span class="badge bg-warning me-1">WearOS</span>
+                                <span class="badge bg-warning me-1">Mobile Development</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="text-muted"><i class="fas fa-lock"></i> Proprietary Project</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title text-primary">Quantum DNA Computing</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">UDRI Research Project</h6>
-                                <p class="card-text">
-                                    Research prototype exploring DNA as a computational model for quantum systems using 
-                                    RT-TDDFT and molecular simulation techniques for quantum information representation.
-                                </p>
-                                <div class="mb-2">
-                                    <span class="badge bg-info me-1">Quantum Computing</span>
-                                    <span class="badge bg-info me-1">Computational Chemistry</span>
-                                    <span class="badge bg-info me-1">PySCF</span>
-                                    <span class="badge bg-info me-1">Python</span>
-                                </div>
+                <!-- Quantum DNA Computing Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Quantum DNA Computing</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">UDRI Research Project</h6>
+                            <p class="card-text">
+                                Research prototype exploring DNA as a computational model for quantum systems using 
+                                RT-TDDFT and molecular simulation techniques for quantum information representation.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-info me-1">Quantum Computing</span>
+                                <span class="badge bg-info me-1">Computational Chemistry</span>
+                                <span class="badge bg-info me-1">PySCF</span>
+                                <span class="badge bg-info me-1">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="text-muted"><i class="fas fa-flask"></i> Research Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urban Sprawl Analysis Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Analysis of Urban Sprawl Using Remote Sensing</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">GIS & Remote Sensing Research</h6>
+                            <p class="card-text">
+                                Investigated urban sprawl in Dhaka City from 2013 to 2023 using Landsat 8 satellite imagery. 
+                                Applied spectral indices (NDBI, SAVI, MNDWI, IBI) revealing 63.02% urbanization in a 691.51 sq km study area.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-success me-1">Remote Sensing</span>
+                                <span class="badge bg-success me-1">GIS</span>
+                                <span class="badge bg-success me-1">Satellite Imagery</span>
+                                <span class="badge bg-success me-1">Urban Planning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nahid-hasan-raju/Urban-Sprawl-Detection" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neural Processing of Emotional Musical Stimuli Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Neural Processing of Emotional Musical Stimuli</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">fMRI & Depression Research</h6>
+                            <p class="card-text">
+                                Analyzed brain functions in depressive vs non-depressive subjects using emotional musical stimuli and fMRI. 
+                                Applied PCA and SVM classification on BOLD signals, achieving best accuracy with Occipital Pole ROI.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-danger me-1">fMRI</span>
+                                <span class="badge bg-danger me-1">Neuroscience</span>
+                                <span class="badge bg-danger me-1">SVM</span>
+                                <span class="badge bg-danger me-1">BOLD Signals</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nahid-hasan-raju/Neural-Processing-of-Emotional-Musical-and-Nonmusical-Stimuli-in-Depression" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Learning Road Skeletonization Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Deep Learning-Based Road Skeletonization</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Deep Learning Project (Collaborative)</h6>
+                            <p class="card-text">
+                                Developed U-Net-based model to extract one-pixel-wide road skeletons from thick and noisy road images. 
+                                Achieved 0.87 Dice score and 0.79 IoU using combined BCE+Dice loss on OpenStreetMap data.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-primary me-1">Deep Learning</span>
+                                <span class="badge bg-primary me-1">U-Net</span>
+                                <span class="badge bg-primary me-1">Semantic Segmentation</span>
+                                <span class="badge bg-primary me-1">Computer Vision</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/aibak365/Road_Skeletonization" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                                <span class="text-muted"><i class="fas fa-users"></i> Team Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feistel Cryptographic Algorithm Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Feistel-Based Cryptographic Algorithm</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Cryptography Implementation</h6>
+                            <p class="card-text">
+                                Implemented custom Feistel cipher with 32-bit key, LFSR-based key scheduling, S-Box transformation, 
+                                and P-Box permutation. Features reversible encryption/decryption with comprehensive documentation and testing.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-dark me-1">Cryptography</span>
+                                <span class="badge bg-dark me-1">Feistel Network</span>
+                                <span class="badge bg-dark me-1">LFSR</span>
+                                <span class="badge bg-dark me-1">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nahid-hasan-raju/Feistel-Crypto-Algorithm" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
         <hr class="m-0" />
 
         <!-- Skills -->
