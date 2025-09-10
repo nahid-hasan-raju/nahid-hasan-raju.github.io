@@ -1,0 +1,218 @@
+/* =================
+   CUSTOM PORTFOLIO STYLES
+   ================= */
+
+/* Project Links Styling */
+.project-links a {
+    text-decoration: none !important;
+}
+
+.project-links a:hover {
+    text-decoration: none !important;
+    opacity: 0.8;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+/* Additional Portfolio Sections */
+.section-title {
+    color: #bd5d38;
+    margin-bottom: 3rem;
+}
+
+.award-item, 
+.training-item, 
+.contest-item {
+    margin-bottom: 2rem;
+}
+
+.badge-custom {
+    background-color: #bd5d38;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.problem-solving-stats {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.achievement-highlight {
+    background-color: #28a745;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Certificate Slider Styles */
+.certificate-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f8f9fa;
+    border-radius: 1rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.certificate-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.certificate-item {
+    min-width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(189, 93, 56, 0.9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    font-size: 18px;
+}
+
+.slider-nav:hover {
+    background: #bd5d38;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-nav.prev {
+    left: 15px;
+}
+
+.slider-nav.next {
+    right: 15px;
+}
+
+.slider-nav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Slider indicators */
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-dot.active {
+    background: #bd5d38;
+}
+
+/* Resume section styling to match existing theme
+.resume-section {
+    padding: 6rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.resume-section-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+} */
+
+/* Responsive Design for Certificate Slider */
+@media (max-width: 768px) {
+    .certificate-item {
+        min-width: 280px;
+        max-width: 280px;
+    }
+    
+    .slider-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .slider-nav.prev {
+        left: 10px;
+    }
+    
+    .slider-nav.next {
+        right: 10px;
+    }
+    
+    .resume-section-content {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .certificate-item {
+        min-width: 250px;
+        max-width: 250px;
+    }
+    
+    .problem-solving-stats {
+        padding: 1.5rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+}

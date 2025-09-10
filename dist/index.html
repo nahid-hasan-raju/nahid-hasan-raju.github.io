@@ -12,24 +12,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-    <style>
-        .project-links a {
-            text-decoration: none !important;
-        }
-        
-        .project-links a:hover {
-            text-decoration: none !important;
-        }
-        
-        /* Optional: Add hover effect instead of underline */
-        .project-links a:hover {
-            opacity: 0.8;
-            transform: translateY(-1px);
-            transition: all 0.2s ease;
-        }
-    </style>
+   
     <!-- Bootstrap Theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -550,34 +537,308 @@
                 </ul>
             </div>
         </section>
-    </div>
 
-    <!-- Bootstrap core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        <!-- Problem Solving Profile Section -->
+        <section class="resume-section" id="problem-solving">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Problem Solving <span class="text-primary">Profile</span></h2>
+                
+                <!-- Stats Overview -->
+                <div class="problem-solving-stats">
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <div class="stat-card">
+                                <h3 class="mb-1">958</h3>
+                                <p class="mb-0">Total Problems Solved</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="stat-card">
+                                <h3 class="mb-1">1544</h3>
+                                <p class="mb-0">Max Codeforces Rating</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="stat-card">
+                                <h3 class="mb-1">4th</h3>
+                                <p class="mb-0">Highest Bangladesh Rank on VJudge</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="stat-card">
+                                <h3 class="mb-1">8</h3>
+                                <p class="mb-0">Different Online Judges</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Contest Achievements -->
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <h3 class="mb-0">Programming Contest Achievements</h3>
+                </div>
+                <div class="mb-3"></div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">ICPC Dhaka Regional</h3>
+                        <div class="subheading mb-3">Team: RU_Squadron & RU_Recruits</div>
+                        <p>2018: Team RU_Recruits - Ranked: 212th<br>2019: Team RU_Squadron - Ranked: 74th</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2018 - 2019</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">NCPC & IUPC Competitions</h3>
+                        <div class="subheading mb-3">Multiple Programming Contests</div>
+                        <p>NCPC 2020: Team RU_Squadron - Ranked: 67th<br>Participated 10+ IUPC - Ranked up to 4th</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2017 - 2020</span></div>
+                </div>
+
+                <!-- Online Judge Profiles -->
+                <h3 class="mb-4">Online Judge Profiles</h3>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-code text-warning"></i></span>
+                        <strong>Codeforces:</strong> Contest Rating: <span class="achievement-highlight">1544 (max)</span>, Solved: 565 problems
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-success"></i></span>
+                        <strong>Vjudge:</strong> Solved: 880 problems <span class="achievement-highlight">4th Highest in Bangladesh</span>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-code-branch text-info"></i></span>
+                        <strong>Stopstalk:</strong> Solved: 958 problems in 8 different Online Judges
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-lightbulb text-primary"></i></span>
+                        <strong>LightOJ:</strong> Solved: 171 problems
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-star text-danger"></i></span>
+                        <strong>UVA:</strong> Solved: 132 problems
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Certificates Section with Slider -->
+        <section class="resume-section" id="certificates">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Certificates</h2>
+                
+                <div class="certificate-slider">
+                    <button class="slider-nav prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-nav next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="certificate-wrapper">
+                        <div class="certificate-container" id="certificateContainer">
+                            <!-- Certificate items - Replace with your actual certificates -->
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/Hult Prize.jpg', 'Hult Prize Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/Hult Prize.jpg" class="certificate-img" alt="Hult Prize Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Hult Prize</h6>
+                                        <p class="card-text text-muted">Competition - 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/IC4ME2-2021.jpg', 'IC4ME2 Conference Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/IC4ME2-2021.jpg" class="certificate-img" alt="IC4ME2 Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">IC4ME2 Conference</h6>
+                                        <p class="card-text text-muted">Conference - 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/Volunteer-IEEE Project showcasing-2019.jpg', 'Python Programming Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/Volunteer-IEEE Project showcasing-2019.jpg" class="certificate-img" alt="Python Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Python Programming</h6>
+                                        <p class="card-text text-muted">Python Institute - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/dsa-certificate.jpg', 'Data Structures & Algorithms Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/dsa-certificate.jpg" class="certificate-img" alt="DSA Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Data Structures & Algorithms</h6>
+                                        <p class="card-text text-muted">HackerRank - 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/ai-certificate.jpg', 'Artificial Intelligence Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/ai-certificate.jpg" class="certificate-img" alt="AI Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Artificial Intelligence</h6>
+                                        <p class="card-text text-muted">edX - 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/web-dev-certificate.jpg', 'Web Development Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/web-dev-certificate.jpg" class="certificate-img" alt="Web Dev Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Web Development</h6>
+                                        <p class="card-text text-muted">FreeCodeCamp - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/database-certificate.jpg', 'Database Management Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/database-certificate.jpg" class="certificate-img" alt="Database Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Database Management</h6>
+                                        <p class="card-text text-muted">Oracle - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="certificate-item" onclick="openCertificate('assets/certificates/cybersecurity-certificate.jpg', 'Cybersecurity Certificate')">
+                                <div class="card">
+                                    <img src="assets/certificates/cybersecurity-certificate.jpg" class="certificate-img" alt="Cybersecurity Certificate">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Cybersecurity Fundamentals</h6>
+                                        <p class="card-text text-muted">IBM - 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Add more certificate items as needed -->
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar" id="progressBar"></div>
+                    </div>
+                    
+                    <!-- Indicators -->
+                    <div class="slider-indicators" id="sliderIndicators"></div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-muted">
+                        <i class="fas fa-mouse-pointer me-2"></i>Click on any certificate to view full size
+                        <span class="ms-3"><i class="fas fa-arrows-alt-h me-2"></i>Use arrow buttons or swipe to navigate</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Extra Curricular Activities Section -->
+        <section class="resume-section" id="extracurricular">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Extra Curricular <span class="text-primary">Activities</span></h2>
+                
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Social Chair</h3>
+                        <div class="subheading mb-3">Student Organization Leadership</div>
+                        <p>Served as Social Chair for two consecutive terms, organizing and coordinating social events, activities, and community engagement programs for the student body. Successfully managed event logistics, budget allocation, and team coordination.</p>
+                        <div class="mt-3">
+                            <span class="badge-custom">Leadership</span>
+                            <span class="badge-custom">Event Management</span>
+                            <span class="badge-custom">Team Coordination</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Two Terms</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Competition Champion</h3>
+                        <div class="subheading mb-3">Academic & Programming Competitions</div>
+                        <p>Achieved championship status in various competitive programming contests and academic competitions. Demonstrated excellence in algorithmic problem-solving and team collaboration under pressure.</p>
+                        <div class="mt-3">
+                            <span class="badge-custom">Problem Solving</span>
+                            <span class="badge-custom">Competition</span>
+                            <span class="badge-custom">Achievement</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Multiple Years</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">IEEE Volunteer</h3>
+                        <div class="subheading mb-3">Institute of Electrical and Electronics Engineers</div>
+                        <p>Active volunteer with IEEE, contributing to technology advancement initiatives, organizing technical workshops, and participating in community outreach programs. Engaged in promoting STEM education and professional development.</p>
+                        <div class="mt-3">
+                            <span class="badge-custom">Technology</span>
+                            <span class="badge-custom">Volunteer Service</span>
+                            <span class="badge-custom">STEM Education</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Active Member</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        </div>
+
+        <!-- Certificate Modal -->
+        <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalCertificateImg" src="" class="img-fluid" alt="Certificate">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Navbar collapse on scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('#sideNav');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('navbar-shrink');
+                } else {
+                    navbar.classList.remove('navbar-shrink');
                 }
             });
-        });
-
-        // Navbar collapse on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('#sideNav');
-            if (window.scrollY > 100) {
-                navbar.classList.add('navbar-shrink');
-            } else {
-                navbar.classList.remove('navbar-shrink');
-            }
-        });
-    </script>
-</body>
+        </script>
+        <!-- Certificate Slider JS -->
+        <script src="js/certificate-slider.js"></script>
+    </body>
 </html>
