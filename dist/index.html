@@ -811,6 +811,35 @@
             </div>
         </div>
 
+        
+<!-- 
+        // Page counter -->
+        <p>This page has been visited <span id="visit-count">…</span> times.</p>
+
+        <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize with your workspace name
+            const counter = new Counter({ workspace: 'my-portfolio' });
+
+            const el = document.getElementById('visit-count');
+
+            // Increment the counter and get the latest value
+            counter.up('page-views')
+            .then(res => {
+                el.textContent = res.value; // Show the updated count
+            })
+            .catch(err => {
+                console.error('CounterAPI error:', err);
+                el.textContent = 'N/A'; // Fallback if something goes wrong
+            });
+        });
+        </script>
+
+
+<!--  // Page counter -->
+
+
         <!-- Bootstrap core JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
