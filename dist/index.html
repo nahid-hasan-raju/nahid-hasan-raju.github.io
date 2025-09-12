@@ -825,7 +825,7 @@
             const el = document.getElementById('visit-count');
 
             // Increment the counter and get the latest value
-            counter.up('page-views')
+            counter.up('page-views-nhr')
             .then(res => {
                 el.textContent = res.value; // Show the updated count
             })
