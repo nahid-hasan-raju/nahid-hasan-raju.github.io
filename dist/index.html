@@ -804,20 +804,21 @@
         <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
         <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize with your workspace name
             const counter = new Counter({ workspace: 'my-portfolio' });
-
             const el = document.getElementById('visit-count');
 
-            // Increment the counter and get the latest value
+            // // Show placeholder until API responds
+            // el.textContent = '…';
+
             counter.up('page-views-nhr')
-            .then(res => {
-                el.textContent = res.value; // Show the updated count
-            })
-            .catch(err => {
-                console.error('CounterAPI error:', err);
-                el.textContent = 'N/A'; // Fallback if something goes wrong
-            });
+                .then(res => {
+                    console.log('Counter response:', res);
+                    el.textContent = res.data.up_count;
+                })
+                .catch(err => {
+                    console.error('CounterAPI error:', err);
+                    el.textContent = 'N/A';
+                });
         });
         </script>
 
