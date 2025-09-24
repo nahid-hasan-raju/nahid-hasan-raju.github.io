@@ -951,10 +951,20 @@
         <hr class="m-0" />
 
                 
-<!-- 
-        // Page counter -->
-        <footer style="text-align: center; margin: 20px 0; font-size: 20px; color: #15913a;">
-        This portfolio has been visited <span id="visit-count">…hh</span> times.
+<!-- Page counter -->
+ 
+        <footer style="
+            text-align: center;
+            margin: 40px 0 20px 0;
+            font-size: 16px;
+            color: #6e6e6e; /* subtle gray to match text style */
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-family: 'Inter', sans-serif;
+        ">
+            <span style="color: #d25c36; font-weight: 700;">👀</span>
+            This portfolio has been visited 
+            <span id="visit-count" style="color: #d25c36; font-weight: 700;">…</span> times.
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
@@ -962,9 +972,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const counter = new Counter({ workspace: 'my-portfolio' });
             const el = document.getElementById('visit-count');
-
-            // // Show placeholder until API responds
-            // el.textContent = '…';
 
             counter.up('page-views-nhr')
                 .then(res => {
@@ -977,6 +984,7 @@
                 });
         });
         </script>
+
 
 
 <!--  // Page counter -->
