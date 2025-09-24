@@ -80,7 +80,7 @@
 
 .certificate-container {
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     gap: 1rem;
     padding: 1rem 0;
