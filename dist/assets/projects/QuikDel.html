@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuikDel: A Novel & Scalable Distributed Approach for Efficient Long-haul Delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .authors {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .institution {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin: 25px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: #ecf0f1;
+            padding: 25px;
+            border-left: 5px solid #3498db;
+            margin: 25px 0;
+        }
+        
+        .key-contributions {
+            background: #e8f5e9;
+            padding: 25px;
+            border-left: 5px solid #4caf50;
+            margin: 25px 0;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+        }
+        
+        .results-table th {
+            background: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .results-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .results-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .comparison {
+            background: #fff3cd;
+            padding: 20px;
+            border-left: 5px solid #ffc107;
+            margin: 25px 0;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        .methodology {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QuikDel: A Novel & Scalable Distributed Approach for Efficient Long-haul Delivery</h1>
+            <div class="subtitle">Reinforcement Learning-Based Last-Mile Delivery Framework</div>
+            <div class="authors">
+                <strong>Research Team:</strong><br>
+                Md Nahid Hasan, Vaskar Raychoudhury,
+                Robert Kilgore, Yusuf Ozdemir, Ashman Mehra, Snehanshu Saha
+            </div>
+            <div class="institution">
+                Miami University & BITS Pilani K. K. Birla Goa Campus
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="highlight-box">
+                <p><strong>QuikDel</strong> is a socially aware, distributed delivery framework that uses reinforcement learning to optimize last-mile logistics at urban scale. The system reduces travel distance by up to 13% over point-to-point baselines while maintaining strong delivery performance and low computational overhead.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">13%</div>
+                    <div class="stat-label">Distance Reduction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4 Cities</div>
+                    <div class="stat-label">Tested & Validated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">13,866</div>
+                    <div class="stat-label">Deliveries Processed/Hour</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">99%+</div>
+                    <div class="stat-label">QCense Accuracy</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Problem Statement</h2>
+            <p>The COVID-19 pandemic exposed critical limitations in traditional centralized delivery networks. The global Online Food Delivery (OFD) market, valued at <strong>$221.65 billion in 2022</strong>, is expected to exceed <strong>$440 billion by 2030</strong>. However, existing systems face fundamental challenges:</p>
+            <ul>
+                <li>Traditional routing methods (Dijkstra's, Floyd-Warshall) fail under dynamic, real-time demands</li>
+                <li>Centralized approaches struggle with exponential complexity at city scale</li>
+                <li>Systems often ignore social structures, creating blind spots in underserved communities</li>
+                <li>Previous RL-based approaches like DeliverAI cannot scale beyond small regions</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Key Innovations</h2>
+            <div class="key-contributions">
+                <h3>1. Centralized Training, Decentralized Execution (CTDE)</h3>
+                <p>Agents are trained offline using Q-learning, eliminating online computational overhead. This enables real-time decision-making with minimal system latency, making QuikDel suitable for resource-constrained edge devices.</p>
+
+                <h3>2. Hierarchical Graph Construction</h3>
+                <p>Urban delivery areas are modeled as a two-layered network of hotspots and superspots, drastically reducing the size of action and state spaces compared to fully connected city-wide networks.</p>
+
+                <h3>3. QCense: Automated Data Extraction Tool</h3>
+                <p>Open-source tool enabling automatic extraction of city-specific data including census tract boundaries, road networks, and producer-consumer locations. Achieves 99.75% recall and 92.58% precision against official data.</p>
+
+                <h3>4. Dynamic Ride-Sharing and Load Balancing</h3>
+                <p>Coordinates between agents through prioritized Q-value sharing, supporting dynamic path-sharing and vehicle consolidation without significantly increasing delivery times.</p>
+
+                <h3>5. Human-Centered Network Design</h3>
+                <p>Explicitly incorporates social structure by accounting for population density, consumer-producer concentration, and high-traffic zones based on real demographic and geographic data.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Methodology</h2>
+            <div class="methodology">
+                <h3>System Architecture</h3>
+                <p><strong>Phase 1: Data Collection & Processing (QCense)</strong></p>
+                <ul>
+                    <li>Extracts census tract geometries from U.S. Census Bureau</li>
+                    <li>Identifies consumer/producer locations via OpenStreetMap</li>
+                    <li>Generates distance/time matrices using GraphHopper routing engine</li>
+                </ul>
+
+                <p><strong>Phase 2: Network Construction</strong></p>
+                <ul>
+                    <li>Places hotspots at centroids of consumer/producer clusters within census tracts</li>
+                    <li>Selects superspots using Superspot Eligibility Score (SES) based on producer/consumer density and connectivity</li>
+                    <li>Ensures spatial balance through spacing-aware selection algorithm</li>
+                </ul>
+
+                <p><strong>Phase 3: Agent Training</strong></p>
+                <ul>
+                    <li>Trains hotspot-level agents (M<sub>h</sub>) for intra-cluster navigation</li>
+                    <li>Trains superspot-level agents (M<sub>s</sub>) for inter-cluster routing</li>
+                    <li>Uses Q-learning with Boltzmann exploration (10,000 episodes per agent)</li>
+                </ul>
+
+                <p><strong>Phase 4: Decentralized Execution</strong></p>
+                <ul>
+                    <li>Agents coordinate through request-response mechanism for ride-sharing</li>
+                    <li>Deliveries share paths when Preferred Action Sets (PAS) intersect</li>
+                    <li>No centralized control required during operation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experimental Results</h2>
+            <h3>Performance Across Major Cities</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Census Tracts</th>
+                        <th>Ratio</th>
+                        <th>Distance Reduction vs P2P</th>
+                        <th>Success Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Columbus</td>
+                        <td>278</td>
+                        <td>1:10</td>
+                        <td>0.73%</td>
+                        <td>96%</td>
+                    </tr>
+                    <tr>
+                        <td>Philadelphia</td>
+                        <td>423</td>
+                        <td>1:10</td>
+                        <td>7.04%</td>
+                        <td>92%</td>
+                    </tr>
+                    <tr>
+                        <td>Chicago</td>
+                        <td>863</td>
+                        <td>1:10</td>
+                        <td>8.03%</td>
+                        <td>94%</td>
+                    </tr>
+                    <tr>
+                        <td>New York City</td>
+                        <td>2,190</td>
+                        <td>1:10</td>
+                        <td>5.12%</td>
+                        <td>93%</td>
+                    </tr>
+                    <tr>
+                        <td>Chicago Subset</td>
+                        <td>31</td>
+                        <td>1:10</td>
+                        <td>16.85%</td>
+                        <td>95%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comparison">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li><strong>Distance Savings:</strong> QuikDel reduces total distance by an average of 6.62% compared to point-to-point routing and 13.01% compared to ablation study (no ride-sharing)</li>
+                    <li><strong>Scalability:</strong> In Chicago, QuikDel reduces model complexity from 627.7 million parameters (DeliverAI) to just 377,500 parameters</li>
+                    <li><strong>Computational Efficiency:</strong> Training time per episode reduced significantly due to multi-fold reduction in state and action space</li>
+                    <li><strong>Trade-offs:</strong> Average delivery time increases by approximately 348 seconds (32.9%) compared to direct routing, but distances below 35 minutes remain acceptable</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Complexity Analysis: QuikDel vs DeliverAI</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>DeliverAI</th>
+                        <th>QuikDel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Space - Q-tables</strong></td>
+                        <td>Θ(H³)</td>
+                        <td>O(H³<sub>s</sub>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time - Agent Training</strong></td>
+                        <td>O(H · E<sub>DA</sub> · t<sub>DA</sub>)</td>
+                        <td>O((H<sub>s</sub> + h<sub>m</sub>) · E<sub>QD</sub> · t<sub>QD</sub>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time - Agent Interaction</strong></td>
+                        <td>O(H)</td>
+                        <td>O(h<sub>m</sub>) or O(H<sub>s</sub>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scalability</strong></td>
+                        <td>Limited to ~31 tracts</td>
+                        <td>Tested up to 2,190 tracts</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>Note: H = total hotspots, H<sub>s</sub> = superspots, h<sub>m</sub> = max hotspots per cluster, t<sub>QD</sub> <<< t<sub>DA</sub></em></p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Contributions</h2>
+            <h3>Mathematical Framework</h3>
+            <p>QuikDel formulates urban delivery as a Dynamic Multi-Objective Optimization Problem (DMOOP) with three primary objectives:</p>
+            <ul>
+                <li><strong>O1:</strong> Minimize total distance traveled by all delivery vehicles</li>
+                <li><strong>O2:</strong> Minimize average delivery time</li>
+                <li><strong>O3:</strong> Minimize total number of active vehicles required</li>
+            </ul>
+
+            <h3>Superspot Eligibility Score (SES)</h3>
+            <p>Novel scoring system that balances producer/consumer density with network connectivity to select optimal superspots. Ensures even spatial distribution while maximizing logistical efficiency.</p>
+
+            <h3>Preferred Action Set (PAS)</h3>
+            <p>Dynamic coordination mechanism enabling ride-sharing between deliveries. Routes merge when PAS intersects and decouple when paths diverge, optimizing shared segments without sacrificing individual delivery requirements.</p>
+        </div>
+
+        <div class="section">
+            <h2>Validation & Real-World Impact</h2>
+            <div class="highlight-box">
+                <h3>QCense Validation (Chicago Dataset)</h3>
+                <ul>
+                    <li><strong>Recall:</strong> 99.75% - captures nearly all relevant census tracts</li>
+                    <li><strong>Precision:</strong> 92.58% - minimal over-selection</li>
+                    <li><strong>F1 Score:</strong> 96.03% - excellent balance</li>
+                </ul>
+            </div>
+
+            <h3>Simulation Realism</h3>
+            <ul>
+                <li>Used real traffic data from March 30, 2023 (6:00-7:00 PM peak hours)</li>
+                <li>Bimodal Gaussian distribution models realistic demand peaks</li>
+                <li>Dynamic time limits based on actual travel distances (1.5× base time)</li>
+                <li>Processed 13,866 randomly distributed orders per simulation</li>
+            </ul>
+
+            <h3>Practical Deployment Advantages</h3>
+            <ul>
+                <li>Fault tolerance through decentralized decision-making (no single point of failure)</li>
+                <li>Rapid retraining capability for changing urban conditions</li>
+                <li>Low memory footprint enables deployment on edge devices</li>
+                <li>Open-source tools facilitate adoption across any U.S. city</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Future Work & Extensions</h2>
+            <ul>
+                <li><strong>Multi-delivery vehicles:</strong> Extend beyond 2-delivery limit per vehicle to increase capacity in high-density zones</li>
+                <li><strong>Dynamic superspot clustering:</strong> Allow multiple superspots per cluster and adaptive reconfiguration</li>
+                <li><strong>Advanced RL techniques:</strong> Explore Deep Q-Networks (DQN) or Actor-Critic models for enhanced adaptability</li>
+                <li><strong>Multi-route ranking:</strong> Generate multiple alternative routes rather than single best path</li>
+                <li><strong>Real-time adaptation:</strong> Incorporate live traffic, weather, and demand pattern updates</li>
+                <li><strong>International deployment:</strong> Extend QCense to support census systems beyond the United States</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Publications & Resources</h2>
+            <p><strong>Journal:</strong> ACM Transactions on Intelligent Systems and Technology (TIST)</p>
+            <p><strong>Open Source Tools:</strong></p>
+            <ul>
+                <li>QCense preprocessing pipeline: <code>https://anonymous.4open.science/r/QCense-7AE3</code></li>
+                <li>Licensed under GNU General Public License (GPL)</li>
+            </ul>
+            <p><strong>Data Sources:</strong></p>
+            <ul>
+                <li>U.S. Census Bureau (2018 census tract data)</li>
+                <li>OpenStreetMap (consumer/producer locations)</li>
+                <li>GraphHopper routing engine (distance/time matrices)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>QuikDel Research Team</strong></p>
+            <p>Department of Computer Science and Software Engineering, Miami University</p>
+            <p>Department of Computer Science & Information Systems, BITS Pilani K. K. Birla Goa Campus</p>
+            <p style="margin-top: 15px; font-style: italic;">
+                "Building more resilient and inclusive delivery infrastructures—designed not just for speed and scale, but for social impact."
+            </p>
+        </div>
+    </div>
+</body>
+</html>
